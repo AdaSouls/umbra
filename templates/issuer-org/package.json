@@ -1,0 +1,33 @@
+{
+  "name": "my-org-umbra",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Template for organizations issuing Umbra soulbound credentials",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "register": "tsx scripts/register-org.ts",
+    "emit": "tsx scripts/emit-credential.ts",
+    "bulk-emit": "tsx scripts/bulk-emit.ts",
+    "check": "tsx scripts/check-org.ts"
+  },
+  "dependencies": {
+    "@adasouls/soulbound-core": "^0.1.0-alpha.1",
+    "@adasouls/soulbound-sdk": "^0.1.0-alpha.1",
+    "@meshsdk/core": "^1.7.0",
+    "next": "^15.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}
